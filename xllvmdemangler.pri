@@ -1,6 +1,8 @@
 INCLUDEPATH += $$PWD/3rdparty
 DEPENDPATH += $$PWD/3rdparty
 
+CONFIG += c++14
+
 HEADERS += \
     $$PWD/3rdparty/llvm/Demangle/Demangle.h \
     $$PWD/3rdparty/llvm/Demangle/DemangleConfig.h \
