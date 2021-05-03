@@ -2320,7 +2320,7 @@ void Demangler::dumpBackReferences() {
     TypeNode *T = Backrefs.FunctionParams[I];
     T->output(OS, OF_Default);
 
-    std::printf("  [%d] - %.*s\n", (int)I, (int)OS.getCurrentPosition(),
+    printf("  [%d] - %.*s\n", (int)I, (int)OS.getCurrentPosition(),
                 OS.getBuffer());
   }
   std::free(OS.getBuffer());
