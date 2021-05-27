@@ -2347,7 +2347,7 @@ char *llvm::microsoftDemangle(const char *MangledName, size_t *NMangled,
   if (!D.Error && NMangled)
     *NMangled = Name.begin() - MangledName;
 
-//  if (Flags & MSDF_DumpBackrefs)
+  if (Flags & MSDF_DumpBackrefs)
     D.dumpBackReferences();
 
   OutputFlags OF = OF_Default;
